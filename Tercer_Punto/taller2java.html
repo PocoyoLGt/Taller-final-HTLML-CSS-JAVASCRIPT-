@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body class="cuerpotallerjava">
+    <header class="portadatallerjv">
+        <h1 class="estilotitulosjava">TALLER 2 JAVA CONDICIONALES</h1>
+
+    </header>
+    <section>
+        <article class="enunciadosjava">
+            <h2 class="subtalljava"> Código Principal</h2>
+            <a class="estilolinks" href="https://github.com/PocoyoLGt/Taller_2.git">Repositorio Taller 2</a>
+            <pre class="codigojv">
+                import Cuarto.Punto_4;
+                import Decimo.Punto_10;
+                import Noveno.Punto_9;
+                import Octavo.Punto_8;
+                import Primer_punto.Punto_1;
+                import Quinto.Punto_5;
+                import Segundo.Punto_2;
+                import Septimo.Punto_7;
+                import Sexto.Punto_6;
+                import Tercero.Punto_3;
+                
+                import java.io.IOException;
+                import java.util.Scanner;
+                
+                public class Main {
+                    private static boolean bandera = true;
+                    private static int opcion;
+                
+                    public static void main(String[] args) throws IOException, InterruptedException {
+                
+                        new ProcessBuilder("cmd","/c","cls").inheritIO().start().waitFor();
+                        do {
+                
+                            menu();
+                            opcion = capturarOpcion();
+                            bandera = evaluarOpcion(opcion);
+                        } while(bandera);
+                
+                
+                    }
+                
+                    private static void menu() {
+                        System.out.println("Escoja el taller que desea ver");
+                        System.out.println("1. Punto #1");
+                        System.out.println("2. Punto #2");
+                        System.out.println("3. Punto #3");
+                        System.out.println("4. Punto #4");
+                        System.out.println("5. Punto #5");
+                        System.out.println("6. Punto #6");
+                        System.out.println("7. Punto #7");
+                        System.out.println("8. Punto #8");
+                        System.out.println("9. Punto #9");
+                        System.out.println("10. Punto #10");
+                        System.out.println("0. Salir del taller");
+                    }
+                    private static int capturarOpcion() {
+                        Scanner input = new Scanner(System.in);
+                        return input.nextInt();
+                    }
+                    private static boolean capturarBoolean(){
+                        Scanner input = new Scanner(System.in);
+                        return input.nextBoolean();
+                    }
+                    private static boolean evaluarOpcion(int opcion) throws IOException {
+                        switch(opcion) {
+                            case 0:
+                                return false;
+                            case 1:
+                                Punto_1 p1 = new Punto_1();
+                                p1.Punto_1();
+                                System.out.println("Desea continuar?");
+                                bandera = capturarBoolean();
+                                return bandera;
+                            case 2:
+                                Punto_2 p2 = new Punto_2();
+                                p2.Punto_2();
+                                System.out.println("Desea continuar?");
+                                bandera = capturarBoolean();
+                                return bandera;
+                            case 3:
+                                Punto_3 p3 = new Punto_3();
+                                p3.Punto_3();
+                                System.out.println("Desea continuar?");
+                                bandera = capturarBoolean();
+                                return bandera;
+                            case 4:
+                                Punto_4 p4 = new Punto_4();
+                                p4.Punto_4();
+                                System.out.println("Desea continuar?");
+                                bandera = capturarBoolean();
+                                return bandera;
+                            case 5:
+                                Punto_5 p5 = new Punto_5();
+                                p5.Punto_5();
+                                System.out.println("Desea continuar?");
+                                bandera = capturarBoolean();
+                                return bandera;
+                            case 6:
+                                Punto_6 p6 = new Punto_6();
+                                p6.Punto_6();
+                                System.out.println("Desea continuar?");
+                                bandera = capturarBoolean();
+                                return bandera;
+                            case 7:
+                                Punto_7 p7 = new Punto_7();
+                                p7.Punto_7();
+                                System.out.println("Desea continuar?");
+                                bandera = capturarBoolean();
+                                return bandera;
+                            case 8:
+                                Punto_8 p8 = new Punto_8();
+                                p8.Punto_8();
+                                System.out.println("Desea continuar?");
+                                bandera = capturarBoolean();
+                                return bandera;
+                            case 9:
+                                Punto_9 p9 = new Punto_9();
+                                p9.Punto_9();
+                                System.out.println("Desea continuar?");
+                                bandera = capturarBoolean();
+                                return bandera;
+                            case 10:
+                                Punto_10 p10 = new Punto_10();
+                                p10.Punto_10();
+                                System.out.println("Desea continuar?");
+                                bandera = capturarBoolean();
+                                return bandera;
+                
+                
+                
+                            default:
+                                System.out.println("Opción incorrecta");
+                                System.in.read();
+                                return true;
+                        }
+                
+                
+                    }
+                
+                
+                }
+            </pre>
+            <h2 class="subtalljava"> Punto 1</h2>
+            <p class="estiloparrafos"> Realizar un programa en el cual se solicite la edad de una persona. Si la persona es mayor o igual a 18 años, deberá mostrar en pantalla: Usted es mayor de edad. </p>
+            <a class="estilolinks" href="https://github.com/PocoyoLGt/Taller_2/blob/main/Taller_2/src/Primer_punto/Punto_1.java" >Repositorio</a>
+
+            <h2 class="subtalljava"> Punto 2</h2>
+            <p class="estiloparrafos">Realizar un programa en el cual se solicite la edad de una persona. Si la persona es menor a 18 años, deberá mostrar en pantalla: Usted aún es un niño(a).  </p>
+            <a class="estilolinks" href="https://github.com/PocoyoLGt/Taller_2/blob/main/Taller_2/src/Segundo/Punto_2.java" >Repositorio</a>
+
+            <h2 class="subtalljava"> Punto 3</h2>
+            <p class="estiloparrafos"> Realizar un programa en el cual se solicite el nombre, apellidos y edad de la persona. Si la persona es mayor o igual a 18 años, entonce se deberá imprimir en pantalla [Nombre completo] usted es mayor de edad, por lo tanto puede entrar a la fiesta. Si la edad de la persona es menor que 18 años, entonces, deberá imprimirse el siguiente mensaje: [Nombre completo] usted es menor de edad, por lo tanto, no puede entrar a la fiesta, por favor devuélvase a su casa.  </p>
+            <a class="estilolinks" href="https://github.com/PocoyoLGt/Taller_2/blob/main/Taller_2/src/Tercero/Punto_3.java" >Repositorio</a>
+
+            <h2 class="subtalljava"> Punto 4</h2>
+            <p class="estiloparrafos"> La video tienda que presta sus servicios de alquiler de películas a los usuarios del barrio el Porvenir, requiere de una aplicación que permita registrar el alquiler de las películas que adquieren sus usuarios. Para cada usuario se debe permitir la opción de alquilar película, consultar películas disponibles y recibir película en la video tienda con la opción de realizar anotaciones sobre estas si se llegan a presentar daños u otra novedad sobre la película. </p>
+            <a class="estilolinks" href="https://github.com/PocoyoLGt/Taller_2/blob/main/Taller_2/src/Cuarto/Punto_4.java" >Repositorio</a>
+
+            <h2 class="subtalljava"> Punto 5</h2>
+            <p class="estiloparrafos"> La Droguería Mi Salud presta sus servicios en la localidad de Suba y requiere una aplicación para poder facturar los productos que vende a sus clientes y para ello, los productos tienen unas características que deben indicársele al cliente para que pueda escoger el producto a comprar. Para cada cliente, se tienen las opciones de compra de producto, consulta de precios por producto y devoluciones en caso de que se presenten. </p>
+            <a class="estilolinks" href="https://github.com/PocoyoLGt/Taller_2/blob/main/Taller_2/src/Quinto/Punto_5.java" >Repositorio</a>
+
+            <h2 class="subtalljava"> Punto 6</h2>
+            <p class="estiloparrafos"> El taller de motos "El Maquinista" recibe motocicletas de alto cilindraje para realizar las respectivas revisiones y requiere una aplicación que le permita registrar los servicios generados a sus clientes. Para cada motocicleta se debe tener registro del ingreso al taller y las observaciones por parte del cliente. También debe existir registro de salida del taller con las novedades y otra de arreglos hechos por el mecánico en caso de que se requiera inventariar cambios repuestos en la motocicleta al entregarla.  </p>
+            <a class="estilolinks" href="https://github.com/PocoyoLGt/Taller_2/tree/main/Taller_2/src/Sexto" >Repositorio</a>
+
+            <h2 class="subtalljava"> Punto 7</h2>
+            <p class="estiloparrafos"> La Secretaría de Salud Municipal requiere de una aplicación que le permita calcular el IMC (Índice de masa corporal) y requiere los datos peso en kilogramos y estatura en metros Para cada persona encuestada adicional a los datos suministrados, debe mostrar el resultado para cada uno y establecer en qué rango se encuentra (bajo peso, normal, sobrepeso y obeso). </p>
+            <a class="estilolinks" href="https://github.com/PocoyoLGt/Taller_2/blob/main/Taller_2/src/Septimo/Punto_7.java" >Repositorio</a>
+
+            <h2 class="subtalljava"> Punto 8</h2>
+            <p class="estiloparrafos"> El pastelero Don Carlos es el mejor pastelero de la ciudad y requiere una aplicación que le permita registrar los pedidos de los clientes en cuanto a las tortas que realiza. Cada torta tiene unas características propias como sabor, cantidad (porciones) y decoraciones). Se requiere que la aplicación permita registrar los pedidos, las tortas disponibles y las ventas que se registren diariamente. </p>
+            <a class="estilolinks" href="https://github.com/PocoyoLGt/Taller_2/tree/main/Taller_2/src/Octavo" >Repositorio</a>
+            <h2 class="subtalljava"> Punto 9</h2>
+            <p class="estiloparrafos"> El profesor de geometría está explicando a sus estudiantes las fórmulas para calcular el área de diferentes figuras geométricas, para ello requiere una aplicación que le facilite el ejercicio solicitándole los valores al estudiante. La aplicación debe permitir que el estudiante seleccione si desea calcular el área de un rectángulo, triángulo o trapecio. No olvide solicitar los datos necesarios para realizar cada cálculo y mostrar su respectivo resultado. </p>
+            <a class="estilolinks" href="https://github.com/PocoyoLGt/Taller_2/blob/main/Taller_2/src/Noveno/Punto_9.java" >Repositorio</a>
+            <h2 class="subtalljava"> Punto 10</h2>
+            <p class="estiloparrafos"> El banco "Su banco fiel" es un banco que inicia sus actividades financieras y necesita una aplicación para llevar las cuentas de sus usuarios; por lo tanto, se sugiere que la cuenta tenga los atributos titular y cantidad. Para cada cliente las cuentas permitirán realizar ingresos, retiros o consultas de valor. En los ingresos no se pueden insertar valores negativos y para los retiros el valor no puede ser mayor al valor que tiene en la cuenta.  </p>
+            <a class="estilolinks" href="https://github.com/PocoyoLGt/Taller_2/tree/main/Taller_2/src/Decimo" >Repositorio</a>
+
+        </article>
+
+    </section>
+    <div id="volver2">
+        <a href="./index.html" > <img id="volvermenu" src="pictures/VOLVERMENU.png" alt="Volver Menu Principal" > </a>
+        <a href="./tallerjava.html"> <img id="volverjava" src="pictures/VOLVERMENUPSEINT (1).png" alt="Volver Menu JAVA" ></a>
+        
+    
+    </div>
+    
+</body>
+</html>

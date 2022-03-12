@@ -1,0 +1,256 @@
+html{
+    font-family: 'Montserrat', sans-serif;
+   font-family: 'Raleway', sans-serif;
+}
+#portada{
+    background-image: url('pictures/portada.png');
+    color: rgb(2, 1, 22);
+    padding: 3rem 2rem;
+}
+#portada2{
+  background-image: url('pictures/fondopseint.png');
+  padding: 3rem 2rem;
+  
+
+}
+#portada3{
+    background-image: url('pictures/fondojava.png');
+    padding: 3rem 2rem;
+    
+  
+  }
+#portadatallerps{
+    background-image: url('pictures/tallerespseint.png');
+    padding: 3rem 2rem;
+    
+  
+  }
+.portadatallerjv{
+    background-image: url('pictures/talleresjava.png');
+    padding: 3rem 2rem;
+    
+
+}  
+.subtalljava{
+    color: beige;
+    font-size: 2rem;
+}
+#titulotaller3{
+    font-size: 6rem;
+    text-align: center;
+    color:#f8b2d3;
+}
+#titulotaller4{
+    font-size: 6rem;
+    text-align: center;
+    color:#f8b2d3;
+}
+.estilotitulos{
+    font-size: 6rem;
+    text-align: center;
+    color:#f8b2d3;
+}
+.estilotitulosjava{
+    font-size: 6rem;
+    text-align: center;
+    color:#57C4A8;
+}
+#titulotaller1{
+    font-size: 6rem;
+    text-align: center;
+    color: rgb(226, 210, 255);
+   
+}
+#titulotallerjava{
+    font-size: 6rem;
+    text-align: center;
+    color:#bfe4fc;
+   
+}
+#tituloprincipal{
+    font-size: 6rem;
+    text-align: center;
+}
+#cuerpo1{
+    background-color: rgb(236, 195, 195);
+}
+#cuerpo2{
+    background-color: #091420;
+}
+#cuerpo3{
+    background-color: #59A9D6;
+}
+.cuerpotallerpseint{
+    background-color: #EDCACC;
+}
+.cuerpotallerjava{
+    background-color:#1E2328 ;
+}
+#imagenes_menu{
+    margin-left: 19rem;
+    margin-top: 2rem;
+    margin-right: 24rem;
+    border: 5px;
+    border-style: inset;
+    padding: 15px;
+   
+
+}
+#botonespseint{
+    
+    margin-left: 19rem;
+    margin-top: 2rem;
+    margin-right: 24rem; 
+    border: 5px;
+    border-style: inset;
+    padding: 15px;
+    font-size: 3rem;
+    color: black;
+
+}
+#botonesjava{
+    
+    margin-left: 19rem;
+    margin-top: 2rem;
+    margin-right: 24rem; 
+    border: 5px;
+    border-style: inset;
+    padding: 15px;
+    font-size: 3rem;
+    color: rgb(46, 4, 4);
+
+}
+#subtitulo1{
+    margin: 5rem;
+    text-align: center;
+    color: brown;
+    font-size: 35px;
+}
+#subtitulo2{
+    margin: 5rem;
+    text-align: center;
+    color: rgb(241, 204, 255);
+    font-size: 35px;
+}
+#subtitulo3{
+    margin: 5rem;
+    text-align: center;
+    color: #136092;
+    font-size: 35px;
+}
+#piedepag{
+    margin-left: 2rem;
+    margin-top: 10rem;
+}
+#img1:hover{
+    box-shadow: 0px 0px 40px rgb(5, 253, 220);
+    
+}
+#img2:hover{
+    box-shadow: 0px 0px 40px rgb(5, 216, 253);
+    
+}
+#img3:hover{
+    box-shadow: 0px 0px 40px rgb(5, 195, 253);
+    
+}
+.tallps{
+    margin: 5px;
+    color: rgb(255, 255, 255);
+
+}
+.talljv{
+    margin: 15px;
+    color: rgb(0, 0, 0);
+    
+
+}
+.talljv:hover{
+    margin: 15px;
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 40px rgb(2, 10, 61);
+    
+
+}
+.tallps:hover{
+    margin: 5px;
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 40px rgb(5, 216, 253);
+
+}
+#volver1{
+    text-align: center;
+    margin-top: 1rem;
+
+
+}
+#volver2{
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+
+
+}
+.repositorio1{
+    display: block;
+   margin-top: 20px;
+   margin-left: 3rem;
+   background-color: rgb(48, 1, 75);
+   font-size: 2rem;
+   max-width: 500px;
+   color: #c2eff7;
+}
+.enunciados{
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-right: 7rem;
+    border: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 2rem;
+}
+.enunciadosjava{
+    margin-left: 3rem;
+    margin-top: 2rem;
+    margin-right: 6rem;
+    border: 5px;
+    border-style: solid;
+    border-radius: 3px;
+    padding: 2rem;
+    color: #F58219;
+}
+
+.codigops{
+    background-color: #c2eff7;
+    margin-top: 1rem;
+    max-width: 1500px;
+}
+.estilolinks{
+    color: rgb(188, 228, 252);
+    font-size: 2rem;
+
+}
+.estiloparrafos{
+    color: beige;
+}
+.codigojv{
+    background-color: #57C4A8;
+    margin-top: 1rem;
+    max-width: 1500px;
+    border: 6px;
+    border-style: inset;
+    color: #091420;
+}
+.repositorio{
+    margin-top: 10rem;
+    margin-left: 20rem;
+    margin-bottom: 4rem;
+    max-width: 300px;
+    padding: 2rem;
+    border-style:inset;
+    border-radius: 5px;
+    background-color: rgb(80, 214, 255);
+    color: #091420;
+    font-size: large;
+ 
+}

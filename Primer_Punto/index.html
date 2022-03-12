@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="funcionalidad.js"></script>
+</head>
+<body onload="main()">
+    <header>
+        <h1 id="titulo1"> Formulario Contactenos</h1>
+    </header>
+
+    <form id="formulario" action="" method="" class="formulario">
+        <p id="aviso"></p>
+        <label for="Nombre" id="nombre1"> Nombre: <span>*</span> </label>
+        <input type="text" id="Nombre" name="Nombre" placeholder="Nombre Completo"/>
+        <br>
+        <label for="Correo" id="Correo1"> Correo electronico: <span>*</span> </label>
+        <input type="email" id="Correo" name="Correo" placeholder="name@mail.com"/>
+        <br>
+        <label for="Asunto" id="Asunto1"> Asunto:<span>*</span> </label>
+        <input type="text" id="Asunto" name="Asunto" placeholder="Asunto correo"/>
+
+        <br>
+        <label for="Mensaje" id="Mensaje1"> </label>
+        <textarea cols="50" rows="10" id="Mensaje" name="Mensaje" placeholder="Escribir Mensaje"></textarea>
+        <br>
+        <button type="submit" id="enviar" class="btn enviar">
+            Enviar
+        </button>
+        <button type="reset" id="eliminar"> 
+            Resetear
+        </button>
+        
+        
+    </form>
+    
+</body>
+</html>

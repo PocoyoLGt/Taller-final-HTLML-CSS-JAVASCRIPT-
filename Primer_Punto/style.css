@@ -1,0 +1,86 @@
+html{
+    font-family: 'Montserrat', sans-serif;
+   font-family: 'Raleway', sans-serif;
+}
+body {
+    margin: 0px auto;
+    background-color: antiquewhite;
+
+}
+header{
+    background-color: rgb(236, 120, 77);
+    color: antiquewhite;
+    padding: 3rem 2rem;
+}
+header h1{
+    font-size: 4rem;
+    text-align: center;
+}
+#Nombre{
+    margin-top: 2rem;
+   
+    font-size: 2rem;
+    
+
+   
+}
+
+#nombre1{
+    
+    margin-left: 18rem ;
+    font-size: 2rem;
+    
+}
+
+
+
+#Correo{
+    margin-top: 2rem;
+    font-size: 2rem;
+   
+}
+#aviso{
+    color: red;
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+#Correo1{
+    margin-left: 9rem;
+    font-size: 2rem;
+}
+#Asunto{
+    margin-top: 2rem;
+    font-size: 2rem;
+   
+}
+
+#Asunto1{
+    margin-left: 18rem;
+    font-size: 2rem;
+}
+#Mensaje{
+    border: coral;
+    border-style:groove;
+     margin-top: 2rem;
+    margin-left: 15rem;
+    font-size: 2rem;
+}
+#enviar{
+    margin-top: 2rem;
+    margin-left: 35rem;
+    font-size: 2rem;
+   background-color: aqua;
+
+}
+#eliminar{
+    font-size: 2rem;
+    background-color: burlywood;
+}
+span{
+    color: red;
+}
+#micorreo{
+    opacity: 0;
+}

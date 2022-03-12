@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller de ciclos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style3.css">
+</head>
+
+<body class="cuerpotallerpseint">
+    <header id="portadatallerps">
+        <h1 class="estilotitulos" id="titulotallern3">TALLER 3 PSEINT  CICLOS</h1>
+
+    </header>
+
+    <section>
+        <article class="enunciados">
+            <h2 class="subtall1pst"> Punto 1</h2>
+            <p>Realizar la siguiente figura por medio del ciclo Para  </p>
+            <pre>
+                *
+                **
+                ***
+                ****
+                *****
+                ******
+                *******
+                ********
+                *********
+                **********    
+
+            </pre>
+            <pre class="codigops">
+                Proceso punto_1
+                Definir i,j,x Como Entero;
+                
+                Escribir "Ingresa un numero";
+                Leer x;
+                
+                Para i<- 1 Hasta x Con Paso 1 Hacer
+                    Para j <-1  Hasta i Con Paso 1 Hacer
+                        Escribir "*" Sin Saltar;
+                    FinPara
+                    Escribir " ";
+                FinPara
+                
+            FinProceso 
+                
+            </pre>
+            
+          <h2 class="subtall1pst"> Punto 2</h2>
+          <p> Realizar la siguiente figura por medio del ciclo Mientras - Hacer </p>
+          <pre>
+                        *
+                       **
+                      ***
+                     ****
+                    *****
+                   ******
+                  *******
+                 ********
+                *********
+               **********
+          </pre>
+          <pre class="codigops">
+            Proceso punto_2
+	
+            Definir i,j,x Como Entero; 
+            Definir estado Como Logico;
+            
+            estado <- Verdadero;
+            Escribir "Ingresa un numero";
+            Leer x; 
+            Mientras estado = Verdadero Hacer
+                Para i<- 1 Hasta x+(x/2) Con Paso 1 Hacer
+                    Para j <- (x+(x/2))  Hasta i Con Paso -1 Hacer
+                        Escribir "*" Sin Saltar;
+                    FinPara
+                    
+                    Escribir " ";
+                    estado<- Falso;
+                FinPara
+            FinMientras
+            
+            FinProceso
+          
+      
+         </pre>
+           <h2 class="subtall1pst"> Punto 3</h2>
+           <p> Realizar la siguiente figura por medio del ciclo Repetir - Hasta Que</p>
+           <pre>
+                         *
+                        ***
+                       *****
+                      *******
+                     *********
+                    ***********
+                   *************
+                  ***************
+                 *****************
+                *******************
+               *********************
+                        ***
+                        ***
+                       *****
+                      *******
+           </pre>
+           <pre class="codigops">
+            Proceso punto_3
+            Definir i,j,x,k,m Como Entero;
+            Definir estado Como Logico;
+            estado <- Verdadero;
+            x<- 21;
+            Repetir
+                Para i<- x Hasta 1 Con Paso -2 Hacer
+                    Para j <-1  Hasta i Con Paso 1 Hacer
+                        Escribir " " Sin Saltar;
+                    FinPara
+                    Para k<-i Hasta x Con Paso 1 Hacer
+                        Escribir " *" Sin Saltar;
+                    FinPara
+                    Escribir "";
+                    
+                FinPara
+                Escribir "                    * * *         ";
+                Escribir "                    * * *         ";
+                Escribir "                  * * * * *       ";
+                Escribir "                * * * * * * *     ";	
+                
+                estado <- Falso;
+                
+            Hasta Que estado = Falso;
+        
+        FinProceso
+        
+        
+    
+          </pre>
+       <h2 class="subtall1pst"> Punto 4</h2>
+       <p> Se requiere un programa que pueda crear la tabla de multiplicar del número que el usuario indique por medio del ciclo Para; esta debe ser impresa del 1 al 10. Ejemplo, si el usuario indica que desea crear la tabla del 5, entonces el resultado debería ser el siguiente:</p>
+       <pre>
+           1 x 5 = 5
+           2 x 5 = 10
+           3 x 5 = 15
+           4 x 5 = 20
+           5 x 5 = 25
+           6 x 5 = 30
+           7 x 5 = 35
+           8 x 5 = 40
+           9 x 5 = 45
+          10 x 5 = 50
+       </pre>
+       <pre class="codigops">
+        Proceso punto_4
+        Definir usuario Como Caracter;
+        Definir x,i Como Entero;
+        
+        Escribir "Hola, ¿Como te llamas?";
+        Leer usuario;
+        
+        Limpiar Pantalla;
+        
+        Escribir usuario, " ¿De que numero quieres la tabla?";
+        Leer x;
+        Limpiar Pantalla;
+        Escribir usuario, " Esta es la tabla del: ",x;
+        Para i<-1 Hasta 10 Con Paso 1 Hacer
+            
+            Escribir"  ", i, " x ",x, " = ", i*x;
+        FinPara
+        
+        FinProceso
+      
+  
+        </pre>
+        <h2 class="subtall1pst"> Punto 5</h2>
+        <p> Utilizando el ciclo que usted desee, crear un menú de ejecución infinita hasta que el usuario desee terminar dicho ciclo. </p>
+        <pre class="codigops">
+            Proceso punto_5
+            Definir usuario Como Caracter;
+            Definir estado Como Logico;
+            
+            estado <- Verdadero;
+            
+            Repetir
+                
+                Escribir "Menu de usuario";
+                Escribir "¿COMO TE LLAMAS?";
+                Leer usuario;
+                Escribir  "2. HOLA ", usuario;
+                Escribir  "3. Salir";
+                Leer estado;
+            Hasta Que estado = Falso;
+            FinProceso
+        
+
+    
+
+            </pre>
+       <h2 class="subtall1pst"> Punto 6</h2>
+       <p> Se está creando una aplicación que va a estar conectada con un prototipo que permita almacenar contactos telefónicos en el dispositivo. Para ello cada contacto debe contener nombre completo, teléfono y organización. Se requiere que la aplicación permita añadir 3 contactos verificando que el número no esté almacenado, buscar contactos almacenados y eliminar contactos si el usuario lo requiere. Recuerde que el sistema debe terminar cuando el usuario así lo indique.</p>
+       <pre class="codigops">
+        Proceso punto_6
+        Definir nombre, tel, org Como Caracter;
+        Definir i,op Como Entero;
+        Definir  estado, eli Como Logico;
+        Definir  tel1,eliminar, tel2 Como Caracter;
+        estado <- Verdadero;
+        
+        Escribir "Menu de opciones";
+        Escribir  "1. Agregar contactos";
+        Escribir  "2. Eliminar contactos";
+        Escribir "3. Salir";
+        Leer op;
+        Limpiar Pantalla;
+        Segun op Hacer
+            1:
+                Mientras estado = Verdadero Hacer
+                    Para i <- 1 Hasta 1 Con Paso 1 Hacer
+                        
+                        
+                        Escribir "Añadir nuevo contacto";
+                        Escribir "Digite nombre del contacto";
+                        Leer nombre;
+                        Escribir "Digite el numero del contacto";
+                        Leer tel;
+                        Escribir "Digite la organizacion a la que pertenece";
+                        Leer org;
+                        Escribir "Nuevo contacto: ", nombre ;
+                        Escribir "Numero de telefono: ", tel;
+                        Escribir "Organizacion", org;
+                        
+                        
+                        
+                    FinPara
+                    
+                    
+                    Escribir "Desea seguir agregando contactos";
+                    Leer estado;
+                    
+                    Limpiar Pantalla;
+                    Para i <- 1 Hasta 1 Con Paso 1 Hacer
+                        
+                        
+                        Escribir "Añadir nuevo contacto";
+                        Escribir "Digite nombre del contacto";
+                        Leer nombre;
+                        
+                        Escribir "Digite el numero del contacto";
+                        Leer tel1;
+                        Si tel1 = tel Entonces
+                            Escribir "Este numero ya esta en la lista, digite uno nuevo";
+                            Leer tel1;
+                        FinSi
+                        Escribir "Digite la organizacion a la que pertenece";
+                        Leer org;
+                        
+                        Escribir "Nuevo contacto: ", nombre ;
+                        Escribir "Numero de telefono: ", tel1;
+                        Escribir "Organizacion", org;
+                        
+                        
+                        
+                    FinPara
+                    
+                    Escribir "Desea seguir agregando contactos";
+                    Leer estado;
+                    Para i <- 1 Hasta 1 Con Paso 1 Hacer
+                        
+                        
+                        Escribir "Añadir nuevo contacto";
+                        Escribir "Digite nombre del contacto";
+                        Leer nombre;
+                        
+                        Escribir "Digite el numero del contacto";
+                        Leer tel2;
+                        Si tel2 = tel & tel2 = tel1 Entonces
+                            Escribir "Este numero ya esta en la lista, digite uno nuevo";
+                            Leer tel1;
+                        FinSi
+                        Escribir "Digite la organizacion a la que pertenece";
+                        Leer org;
+                        
+                        Escribir "Nuevo contacto: ", nombre ;
+                        Escribir "Numero de telefono: ", tel2;
+                        Escribir "Organizacion", org;
+                        
+                        
+                        
+                    FinPara
+                    
+                    Escribir "Desea seguir agregando contactos";
+                    Leer estado;
+                FinMientras
+                
+                
+                
+                
+            2:
+                Escribir "¿Que contacto desea eliminar?";
+                Leer eliminar;
+                Limpiar Pantalla;
+                Escribir "¿Seguro que quiere eliminar a: ", eliminar, "?";
+                Leer eli;
+                Si eli = Verdadero Entonces
+                    Escribir "El contacto ", eliminar, " ha sido eliminado";
+                SiNo
+                    Escribir "El contacto no fue eliminado";
+                FinSi
+                
+            3:
+                Escribir "Usted ha salido del sistema";
+            De Otro Modo:
+                Escribir "Esta opcion no existe";
+        FinSegun
+        
+        
+        
+    
+    
+    
+    FinProceso
+    
+   
+        </pre>
+        <h2 class="subtall1pst"> Punto 7</h2>
+       <p> El parqueadero "El guardián" presta sus servicios de parqueadero nocturno para los usuarios del barrio y requiere una aplicación que permita registrar los vehículos que se cuidan en estas instalaciones. Se sugiere que el parqueadero tenga los atributos del vehículo como son, placa y marca, y los datos del cliente como son nombre completo y número de teléfono. Para cada vehículo se debe permitir la opción de ingresar al parqueadero, retirar del parqueadero y consultar si un vehículo se encuentra en el parqueadero. Recuerde que el sistema debe terminar cuando el usuario así lo indique. Tenga en presente que el parqueadero solo puede almacenar máximo 5 vehículos.</p>
+       <pre class="codigops">
+        Proceso punto_7
+	
+        Definir placa, marca, cliente, tel, placa1,marca1, cliente1,tel1 Como Caracter;
+        Definir placa2,placa3,placa4,placa5, marca2, marca3,cliente2,cliente3,cliente4, cliente5 Como Caracter;
+        Definir tel2,tel3, tel4, tel5 Como Caracter;
+        Definir estado Como Logico;
+        Definir opc,i Como Entero;
+        
+        placa1 <- "DLC-32E"; marca1 <- " Toyota"; cliente1 <- "Luisa Neira"; tel1 <- "321-8503784";
+        placa2 <- "FTD-59V"; marca2 <- " Mazda"; cliente2 <- "Julian Correa"; tel2 <- "311-7804285";
+        placa3 <- "CJG-76S"; marca3 <- " Audi"; cliente3 <- "Gonzalo Valencia"; tel3 <- "310-46095455";
+        placa4 <- "ERL-19S";   cliente4 <- "Alejandra Ramirez"; tel4 <- "320-6109768";
+        placa5 <- "CBC-29E";   cliente5 <- "Diana Perez"; tel5 <- "321-2059345";
+        
+        estado <- Verdadero;
+        
+        Para i<-1 Hasta 5 Con Paso 1 Hacer
+            Repetir
+                Escribir  "                          ";
+                Escribir "MENU DE OPCIONES PARQUEADERO EL GUARDIAN";
+                Escribir "1. Ingresar al parquedero";
+                Escribir  "2. Retirar del parqueadero";
+                Escribir "3. Consultar vehiculo";
+                Escribir "4. Salir del sistema";
+                Leer opc;
+                Limpiar Pantalla;
+                
+                Segun opc Hacer
+                    1:
+                        Escribir "Registre nombre completo";
+                        Leer cliente;
+                        
+                        Escribir "Registre placa";
+                        Leer placa;
+                        Si placa = placa1 Entonces
+                            Escribir "Esta placa ya esta registrada";
+                            Escribir "Registre otra";
+                            Leer placa;
+                        FinSi
+                        Si placa = placa2 Entonces
+                            Escribir "Esta placa ya esta registrada";
+                        FinSi
+                        Si placa = placa3 Entonces
+                            Escribir "Esta placa ya esta registrada";
+                        FinSi
+                        Si placa = placa4 Entonces
+                            Escribir "Esta placa ya esta registrada";
+                        FinSi
+                        Si placa = placa5 Entonces
+                            Escribir "Esta placa ya esta registrada";
+                        FinSi
+                        Escribir "Registre marca ";
+                        Leer marca;
+                        Escribir "Registre numero de telefono";
+                        Leer tel;
+                        
+                        Escribir "Usuario: ",cliente;
+                        Escribir "Placa: ",placa;
+                        Escribir "Marca: ",marca;
+                        Escribir "Numero de telefono : ",tel;
+                        
+                        Limpiar Pantalla;
+                        
+                        Escribir "Desea continuar en el sistema";
+                        Leer estado;
+                        
+                        
+                    2:
+                        Escribir "Que carro desea retirar, digite la placa";
+                        Leer placa;
+                        Si placa = placa1 Entonces
+                            Escribir "El carro de placa ", placa," fue retirado del parqueadero";
+                        FinSi
+                        Si placa = placa2 Entonces
+                            Escribir "El carro de placa ", placa," fue retirado del parqueadero";
+                        FinSi
+                        Si placa = placa3 Entonces
+                            Escribir "El carro de placa ", placa," fue retirado del parqueadero";
+                        FinSi
+                        Si placa = placa4 Entonces
+                            Escribir "El carro de placa ", placa," fue retirado del parqueadero";
+                        FinSi
+                        Si placa = placa5 Entonces
+                            Escribir "El carro de placa ", placa," fue retirado del parqueadero";
+                    
+                        FinSi
+                        Si (placa <> placa1 & placa<> placa2 & placa <> placa3 &placa<>placa4 & placa<>placa5) Entonces
+                            Escribir "Esta placa no esta en el parqueadero";
+                        FinSi
+                        
+                        Escribir "Desea continuar en el sistema";
+                        Leer estado;
+                        
+                    3:
+                        Escribir "Que vehiculo desea buscar, digite placa";
+                        Leer placa;
+                        
+                        Si placa = placa1 Entonces
+                            Escribir "El vehiculo se encuentra en el parqueadero";
+                            Escribir "Dueño del vehiculo: ", cliente1;
+                            Escribir "Placa: ", placa1;
+                            Escribir "Marca: ", marca1;
+                            Escribir "Telefono: ", tel1;
+                        FinSi
+                        Si placa = placa2 Entonces
+                            Escribir "El vehiculo se encuentra en el parqueadero";
+                            Escribir "Dueño del vehiculo: ", cliente2;
+                            Escribir "Placa: ", placa2;
+                            Escribir "Marca: ", marca2;
+                            Escribir "Telefono: ", tel2;
+                        FinSi
+                        Si placa = placa3 Entonces
+                            Escribir "El vehiculo se encuentra en el parqueadero";
+                            Escribir "Dueño del vehiculo: ", cliente3;
+                            Escribir "Placa: ", placa3;
+                            Escribir "Marca: ", marca3;
+                            Escribir "Telefono: ", tel3;
+                        FinSi
+                        Si placa = placa4 Entonces
+                            Escribir "El vehiculo se encuentra en el parqueadero";
+                            Escribir "Dueño del vehiculo: ", cliente4;
+                            Escribir "Placa: ", placa4;
+                            Escribir "Marca: ", marca2;
+                            Escribir "Telefono: ", tel4;
+                        
+                            
+                        FinSi
+                        Si placa = placa5 Entonces
+                            Escribir "El vehiculo se encuentra en el parqueadero";
+                            Escribir "Dueño del vehiculo: ", cliente5;
+                            Escribir "Placa: ", placa5;
+                            Escribir "Marca: ", marca3;
+                            Escribir "Telefono: ", tel5;
+                            
+                        
+                        FinSi
+                        Si (placa <> placa1 & placa<> placa2 & placa <> placa3 &placa<>placa4 & placa<>placa5) Entonces
+                            Escribir "Esta placa no esta en el parqueadero";
+                        FinSi
+                        Escribir "Desea continuar en el sistema";
+                        Leer estado;
+                    
+                    4:
+                        
+                        Escribir "Hasta pronto";
+                    De Otro Modo:
+                        Escribir "Esta opcion no esta en el sistema";
+                FinSegun
+                
+            Hasta Que estado = Falso
+        FinPara
+        
+        
+    FinProceso
+    
+        </pre>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/W2BVPLPzqmU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h2 class="subtall1pst"> Punto 8</h2>
+        <p>La escuela automovilística "El Maestro" requiere una aplicación que permita registrar a sus clientes en los cursos de enseñanza automovilística y establecer quienes lo han aprobado para continuar con el trámite de adquirir la licencia de conducción. Para cada usuario se debe permitir registrar su ingreso al curso, consultar usuarios que hayan presentado el curso y resultados de la prueba del curso (si fueron aprobados o no). Recuerde que el sistema debe terminar cuando el usuario así lo indique. Tenga presente que la escuela tiene capacidad máxima de gestionar 8 usuarios en su totalidad. </p>
+        <pre class="codigops">
+            Proceso punto_8
+	Definir Usuario, Curso,edad,tel Como Caracter;
+	Definir Usuario1,Usuario2, Usuario3, Usuario4, Usuario5, Usuario6 Como Caracter;
+	Definir Usuario7,Usuario8,Usuario9, Usuario10, Curso1,Curso2,Curso3,Curso4 Como Caracter;
+	Definir estado Como Logico;
+	Definir opc,Res1,Res2,Res3,Res4,Res5,i,opcc,opc2, Res6, Res7, Res8, Res9, Res10 Como Entero;
+	
+	Usuario1 <- "Andres Diaz";  Res1 <- 78;
+	Usuario2 <- "Alicia Muñoz"; Res2 <- 45;
+	Usuario3 <- "Bernado Osorio"; Res3 <- 98;
+	Usuario4 <- "Monica Vargas"; Res4 <- 89;
+	Usuario5 <- "Gabriel Pineda"; Res5 <- 54;
+	Usuario6 <- " Danna Guevara"; Res6 <- 56;
+	Usuario7<- "Sara Gonzalez";Res7 <-78;
+	Usuario8<- "Tom Ospina";Res8 <- 67;
+	Usuario9<- "Diana Cruz";Res9 <- 32;
+	Usuario10<- "Rodolfo Buenaventura";Res10 <-97;
+	
+	Curso1 <- "Manejo de auto";
+	Curso2 <- "Señales de transito";
+	Curso3 <- "Reglas del manejo";
+	Curso4 <- "Leyes en la via";
+	
+	estado <- Verdadero;
+	Para i<-1 Hasta 8 Con Paso 1 Hacer
+		Mientras estado=Verdadero Hacer
+			Escribir "Escuela Automovilistica El Maestro";
+			Escribir "Menu de opciones";
+			Escribir "1. Registrar usuario en curso";
+			Escribir "2. Usuarios que han presentado curso";
+			Escribir "3. Usuarios que han aprobado el curso";
+			Escribir "4. Salir";
+			Leer opc;
+			Limpiar Pantalla;
+			
+			Segun opc Hacer
+				1:
+					Escribir "A que curso desea inscribirse";
+					Escribir "1.", Curso1;
+					Escribir "2.", Curso2;
+					Escribir "3.", Curso3;
+					Escribir "4. ", Curso4;
+					Leer opcc;
+					Limpiar Pantalla;
+					Segun opcc Hacer
+						1:
+							Escribir Curso1;
+							Escribir  "Digite  nombre";
+							Leer Usuario;
+							Escribir "Digite  edad";
+							Leer Edad;
+							Escribir "Digite su numero de telefono";
+							Leer tel;
+							
+							Escribir Usuario, " Ha quedado inscrita en el curso ", Curso1;
+							Escribir "Desea seguir usando la aplicacion";
+							Leer estado;
+						2:
+							Escribir Curso2;
+							Escribir  "Digite  nombre";
+							Leer Usuario;
+							Escribir "Digite  edad";
+							Leer Edad;
+							Escribir "Digite su numero de telefono";
+							Leer tel;
+							
+							Escribir Usuario, " Ha quedado inscrita en el curso ", Curso2;
+							Escribir "Desea seguir usando la aplicacion";
+							Leer estado;
+						3:
+							Escribir Curso3;
+							Escribir  "Digite  nombre";
+							Leer Usuario;
+							Escribir "Digite  edad";
+							Leer Edad;
+							Escribir "Digite su numero de telefono";
+							Leer tel;
+							
+							Escribir Usuario, " Ha quedado inscrita en el curso ", Curso3;
+							Escribir "Desea seguir usando la aplicacion";
+							Leer estado;
+						4:	
+							Escribir Curso4;
+							Escribir  "Digite  nombre";
+							Leer Usuario;
+							Escribir "Digite  edad";
+							Leer Edad;
+							Escribir "Digite su numero de telefono";
+							Leer tel;
+							
+							Escribir Usuario, " Ha quedado inscrita en el curso ", Curso4;
+							Escribir "Desea seguir usando la aplicacion";
+							Leer estado;
+						De Otro Modo:
+							Escribir "Opcion no valida";
+					FinSegun
+					
+				2:
+					Escribir "¿De que curso desea ver usuarios?";
+					Escribir "1.", Curso1;
+					Escribir "2.", Curso2;
+					Escribir "3.", Curso3;
+					Escribir "4. ", Curso4;
+					Leer  opc2;
+					Limpiar Pantalla;
+					Segun opc2 Hacer
+						1:
+							Escribir "Estos son los usuarios que han presentado el curso ",Curso1;
+							Escribir Usuario2;
+							Escribir Usuario5;
+							Escribir Usuario7;
+							
+							
+							Escribir "Desea seguir usando la aplicacion";
+							Leer estado;
+						2:
+							Escribir "Estos son los usuarios que han presentado el curso ",Curso2;
+							Escribir Usuario1;
+							Escribir Usuario10;
+							Escribir  Usuario8;
+							
+							Escribir "Desea seguir usando la aplicacion";
+							Leer estado;
+						3:
+							Escribir "Estos son los usuarios que han presentado el curso ",Curso3;
+							Escribir Usuario3;
+							Escribir Usuario9;
+							Escribir "Desea seguir usando la aplicacion";
+							Leer estado;
+						4:
+							Escribir "Estos son los usuarios que han presentado el curso ",Curso4;
+							Escribir Usuario4;
+							Escribir Usuario6;
+							Escribir "Desea seguir usando la aplicacion";
+							Leer estado;
+						De Otro Modo:
+							Escribir "Esta opcion no existe";
+					FinSegun
+					
+				3:
+					Escribir "Estos son los estudiantes que han aprobado los cursos y sus resultados";
+					Escribir "Nombre: ",Usuario1, "Resultado: ",Res1, "Curso: ",Curso2;
+					Escribir "Nombre: ",Usuario3, "Resultado: ",Res3, "Curso: ",Curso3;
+					Escribir "Nombre: ",Usuario4, "Resultado: ",Res4, "Curso: ",Curso4;
+					Escribir "Nombre: ",Usuario7, "Resultado: ",Res7, "Curso: ",Curso1;
+					Escribir "Nombre: ",Usuario8, "Resultado: ",Res8, "Curso: ",Curso2;
+					Escribir "Nombre: ",Usuario10, "Resultado: ",Res10, "Curso: ",Curso2;
+				
+					Escribir "           ";
+					Escribir "Estos son los estudiantes que NO aprobaron los cursos y sus resultados";
+					Escribir "Nombre: ",Usuario2, "Resultado: ",Res2, "Curso: ",Curso1;
+					Escribir "Nombre: ",Usuario5, "Resultado: ",Res5, "Curso: ",Curso1;
+					Escribir "Nombre: ",Usuario6, "Resultado: ",Res6, "Curso: ",Curso4;
+					Escribir "Nombre: ",Usuario9, "Resultado: ",Res9, "Curso: ",Curso3;
+					
+					
+					Escribir "Desea seguir usando la aplicacion";
+					Leer estado;
+				4:
+					Escribir "Hasta luego, vuelva pronto";
+				5:	
+				De Otro Modo:
+					Escribir "Esta opcion es invalida";
+					Escribir "¿Desea continuar usando la app?";
+					Escribir estado;
+			FinSegun
+			
+			
+		FinMientras 
+	FinPara
+	
+FinProceso
+     
+    
+         </pre>
+            
+              
+    
+        
+
+        </article>
+    
+    </section>
+    <section>
+        <a class="repositorio" href="https://github.com/PocoyoLGt/TallerGit/tree/Taller3">Repositorio del taller 3 en GitHub</a>
+        
+
+    </section>
+</div>
+<div id="volver2">
+    <a href="./index.html" > <img id="volvermenu" src="pictures/VOLVERMENU.png" alt="Volver Menu Principal" > </a>
+    <a href="./tallerespseint.html"> <img id="volverpseint" src="pictures/VOLVERMENUPSEINT.png" alt="Volver Menu Pseint" ></a>
+    
+
+</div>
+</body>
+
+</html>

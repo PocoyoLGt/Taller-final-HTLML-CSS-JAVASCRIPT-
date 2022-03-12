@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body class="cuerpotallerjava">
+    <header class="portadatallerjv">
+        <h1 class="estilotitulosjava">TALLER 1 JAVA VARIABLES E IMPRESIÓN</h1>
+
+    </header>
+    <section>
+        <article class="enunciadosjava">
+            <h2 class="subtalljava"> Código Principal</h2>
+            <a class="estilolinks" href="https://github.com/PocoyoLGt/Taller_1.git">Repositorio Taller 1 </a>
+            <pre class="codigojv">
+                package Primer;
+
+                import java.io.IOException;
+                import java.util.Scanner;
+                
+                public class Main {
+                   private static boolean bandera = true;
+                   private static int opcion;
+                
+                
+                
+                
+                    public static void main(String[] args) throws IOException {
+                
+                        do {
+                            limpiarPantalla();
+                            menu();
+                            opcion = capturarOpcion();
+                            bandera = evaluarOpcion(opcion);
+                        } while(bandera);
+                
+                    }
+                    private static void menu() {
+                        System.out.println("Escoja un punto del taller");
+                        System.out.println("1. Punto #1");
+                        System.out.println("2. Punto #2");
+                        System.out.println("3. Punto #3");
+                        System.out.println("4. Punto #4");
+                        System.out.println("5. Punto #5");
+                        System.out.println("0. Salir del taller");
+                    }
+                    private static int capturarOpcion() {
+                        Scanner input = new Scanner(System.in);
+                        return input.nextInt();
+                    }
+                    private static boolean evaluarOpcion(int opcion) throws IOException {
+                        switch (opcion){
+                            case 0:
+                                return false;
+                
+                            case 1:
+                                Punto1 p1 = new Punto1();
+                                p1.Punto1();
+                                return true;
+                            case 2:
+                                Punto_2 p2 = new Punto_2();
+                                p2.Punto2();
+                                return true;
+                            case 3:
+                                Punto_3 p3 = new Punto_3();
+                                p3.Punto_3();
+                                return true;
+                            case 4:
+                                Punto_4 p4 = new Punto_4();
+                                p4.Punto_4();
+                                return true;
+                            case 5:
+                                Punto_5 p5 = new Punto_5();
+                                p5.Punto_5();
+                                return true;
+                
+                            default:
+                                System.out.println("Opción incorrecta");
+                                System.in.read();
+                                return true;
+                
+                            
+                
+                        }
+
+                
+                    }
+                
+                    private static void limpiarPantalla() {
+                        System.out.print("\u001b[H\u001b[2J");
+                        System.out.flush();
+                    }
+                }
+
+            </pre>
+            <h2 class="subtalljava"> Punto 1</h2>
+            <p class="estiloparrafos"> Realizar un programa el cual solicite su nombre y apellidos. </p>
+            <a class="estilolinks" href="https://github.com/PocoyoLGt/Taller_1/blob/main/Taller_1/src/Primer/Punto1.java "> Repositorio</a>
+            <h2 class="subtalljava"> Punto 2</h2>
+            <p class="estiloparrafos"> Realizar un programa el cual solicite su nombre, apellidos, edad y estatura.</p>
+            <a class="estilolinks" href="https://github.com/PocoyoLGt/Taller_1/blob/main/Taller_1/src/Primer/Punto_2.java "> Repositorio</a>
+            <h2 class="subtalljava"> Punto 3</h2>
+            <p class="estiloparrafos"> Realizar un programa el cual solicite su nombre y apellidos, también debe capturar nombre y apellidos de su padre y madre. Al finalizar debe imprimir en pantalla el siguiente mensaje "Yo [Nombre Completo], soy hijo de [Nombre de la Madre] y [Nombre del Padre]. </p>
+            <a class="estilolinks" href=" https://github.com/PocoyoLGt/Taller_1/blob/main/Taller_1/src/Primer/Punto_3.java"> Repositorio</a>
+            <h2 class="subtalljava"> Punto 4</h2>
+            <p class="estiloparrafos"> Realizar un programa el cual solicite el nombre de una ciudad capital y el país. Al finalizar debe imprimir en pantalla el siguiente mensaje "La ciudad [Nombre de la Ciudad], es la capital del país [Nombre del País]</p>
+            <a class="estilolinks" href="https://github.com/PocoyoLGt/Taller_1/blob/main/Taller_1/src/Primer/Punto_4.java "> Repositorio</a>
+            <h2 class="subtalljava"> Punto 5</h2>
+            <p class="estiloparrafos">Realizar un programa el cual solicite el nombre de su mascota, edad de la mascota, el tipo de mascota y su nombre completo. Al finalizar el sistema debe e imprimir en pantalla el siguiente mensaje: [Nombre de Mascota] es un(a) [Tipo de Mascota], el cual, tiene [Edad de la Mascota] años de edad y [Nombre Completo] es actualmente su dueño(a). </p>
+            <a class="estilolinks" href="https://github.com/PocoyoLGt/Taller_1/blob/main/Taller_1/src/Primer/Punto_4.java "> Repositorio</a>
+            
+
+        </article>
+    </section>
+    <div id="volver2">
+        <a href="./index.html" > <img id="volvermenu" src="pictures/VOLVERMENU.png" alt="Volver Menu Principal" > </a>
+        <a href="./tallerjava.html"> <img id="volverjava" src="pictures/VOLVERMENUPSEINT (1).png" alt="Volver Menu JAVA" ></a>
+        
+    
+    </div>
+</body>
+</html>

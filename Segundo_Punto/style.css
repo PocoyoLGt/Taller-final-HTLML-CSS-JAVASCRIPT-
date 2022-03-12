@@ -1,0 +1,58 @@
+html{
+    font-family: 'Montserrat', sans-serif;
+   font-family: 'Raleway', sans-serif;
+}
+header{
+    background-image: url('img/1.png');
+    color: antiquewhite;
+    padding: 2rem 1rem;
+}
+header h1{
+    font-size: 5rem;
+    text-align: center;
+}
+body{
+    background-color: #f7d2c5;
+}
+.fruit{
+    font-size: 2rem;
+    margin-left: 4rem;
+    border: 2px;
+    border-style: solid;
+    max-width: 400px;
+}
+#subtitulo{
+    margin-left: 4rem;
+    font-size: 2rem;
+    color: rgb(88, 32, 11);
+}
+.fruit{
+background-color: rgba(4, 243, 243, 0.63);
+
+} 
+
+.odd:nth-child(odd){
+    background-color: rgba(132, 90, 168, 0.596);;
+}
+
+.even:nth-child(even){
+    background-color: rgba(132, 90, 168, 0.596);
+}
+#btn_cambiar{
+    background-image: url('img/boton1.png');
+    display: block;
+    margin-left: 8rem;
+    height: 90px;
+    width: 90px;
+    text-indent: -1000px;
+    cursor: pointer;
+}
+#btn_cambiar:active{
+    background-image: url('img/boton2.png');
+    display: block;
+    margin-left: 8rem;
+    height: 90px;
+    width: 90px;
+    text-indent: -1000px;
+    cursor: pointer;
+}

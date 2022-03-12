@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body class="cuerpotallerjava">
+    <header class="portadatallerjv">
+        <h1 class="estilotitulosjava">TALLER 3 JAVA CICLOS</h1>
+
+    </header>
+    <section>
+        <article class="enunciadosjava">
+            <h2 class="subtalljava"> Código Principal</h2>
+            <a class="estilolinks" href="https://github.com/PocoyoLGt/Taller_3.git">Repositorio Taller 3</a>
+            <pre class="codigojv">
+                import Cuarto.Punto_4;
+                import Octavo.Punto_8;
+                import Primero.Punto_1;
+                import Quinto.Punto_5;
+                import Segundo.Punto_2;
+                import Septimo.Punto_7;
+                import Sexto.Punto_6;
+                import Tercero.Punto_3;
+                
+                import java.io.IOException;
+                import java.util.Scanner;
+                
+                public class Main {
+                    private static boolean bandera = true;
+                    private static int opcion;
+                    public static void main(String[] args) throws IOException, InterruptedException {
+                
+                
+                        do {
+                
+                            menu();
+                            opcion = capturarOpcion();
+                            bandera = evaluarOpcion(opcion);
+                        } while(bandera);
+                
+                
+                    }
+                    private static void menu() {
+                        System.out.println("Escoja el taller que desea ver");
+                        System.out.println("1. Punto #1");
+                        System.out.println("2. Punto #2");
+                        System.out.println("3. Punto #3");
+                        System.out.println("4. Punto #4");
+                        System.out.println("5. Punto #5");
+                        System.out.println("6. Punto #6");
+                        System.out.println("7. Punto #7");
+                        System.out.println("8. Punto #8");
+                
+                        System.out.println("0. Salir del taller");
+                    }
+                    private static int capturarOpcion() {
+                        Scanner input = new Scanner(System.in);
+                        return input.nextInt();
+                    }
+                    private static boolean capturarBoolean(){
+                        Scanner input = new Scanner(System.in);
+                        return input.nextBoolean();
+                    }
+                    private static boolean evaluarOpcion(int opcion) throws IOException {
+                        switch(opcion) {
+                            case 0:
+                                return false;
+                            case 1:
+                                Punto_1 p1 = new Punto_1();
+                                p1.Punto_1();
+                                System.out.print("¿Desea continuar? ");
+                                bandera= capturarBoolean();
+                                return bandera;
+                            case 2:
+                                Punto_2 p2 = new Punto_2();
+                                p2.Punto_2();
+                                System.out.print("¿Desea continuar? ");
+                                bandera= capturarBoolean();
+                                return bandera;
+                            case 3:
+                                Punto_3 p3 = new Punto_3();
+                                p3.Punto_3();
+                                System.out.print("¿Desea continuar? ");
+                                bandera= capturarBoolean();
+                                return bandera;
+                            case 4:
+                                Punto_4 p4=new Punto_4();
+                                p4.Punto_4();
+                                System.out.print("¿Desea continuar? ");
+                                bandera= capturarBoolean();
+                                return bandera;
+                            case 5:
+                                Punto_5 p5 = new Punto_5();
+                                p5.Punto_5();
+                                System.out.print("¿Desea continuar? ");
+                                bandera= capturarBoolean();
+                                return bandera;
+                            case 6:
+                                Punto_6 p6 = new Punto_6();
+                                p6.Punto_6();
+                                System.out.print("¿Desea continuar? ");
+                                bandera= capturarBoolean();
+                                return bandera;
+                            case 7:
+                                Punto_7 p7 = new Punto_7();
+                                p7.Punto_7();
+                                System.out.print("¿Desea continuar? ");
+                                bandera= capturarBoolean();
+                                return bandera;
+                            case 8:
+                                Punto_8 p8 = new Punto_8();
+                                p8.Punto_8();
+                                System.out.print("¿Desea continuar? ");
+                                bandera= capturarBoolean();
+                                return bandera;
+                
+                
+                            default:
+                                System.out.println("Opción incorrecta");
+                                System.in.read();
+                                return true;
+                
+                        }
+                
+                    }
+                }
+
+            </pre>
+            <h2 class="subtalljava"> Punto 1</h2>
+            <p class="estiloparrafos"> Realizar la siguiente figura por medio del ciclo Para</p>
+            <pre>
+                *
+                **
+                ***
+                ****
+                *****
+                ******
+                *******
+                ********
+                *********
+                **********    
+
+            </pre>
+            <a class="estilolinks" href="https://github.com/PocoyoLGt/Taller_3/blob/main/Taller_3/src/Primero/Punto_1.java" >Repositorio</a>
+            
+            <h2 class="subtalljava"> Punto 2</h2>
+            <p class="estiloparrafos"> Realizar la siguiente figura por medio del ciclo Mientras - Hacer  </p>
+                            
+              <pre>
+                        *
+                       **
+                      ***
+                     ****
+                    *****
+                   ******
+                  *******
+                 ********
+                *********
+               **********
+          </pre>
+
+            <a class="estilolinks" href="https://github.com/PocoyoLGt/Taller_3/blob/main/Taller_3/src/Segundo/Punto_2.java" >Repositorio</a>
+
+            <h2 class="subtalljava"> Punto 3</h2>
+            <p class="estiloparrafos"> Realizar la siguiente figura por medio del ciclo Repetir - Hasta Que </p>
+            <pre>
+                *
+               ***
+              *****
+             *******
+            *********
+           ***********
+          *************
+         ***************
+        *****************
+       *******************
+      *********************
+               ***
+               ***
+              *****
+             *******
+            </pre>
+            <a class="estilolinks" href="https://github.com/PocoyoLGt/Taller_3/blob/main/Taller_3/src/Tercero/Punto_3.java" >Repositorio</a>
+
+            <h2 class="subtalljava"> Punto 4</h2>
+            <p class="estiloparrafos">Se requiere un programa que pueda crear la tabla de multiplicar del número que el usuario indique por medio del ciclo Para; esta debe ser impresa del 1 al 10. Ejemplo, si el usuario indica que desea crear la tabla del 5, entonces el resultado debería ser el siguiente: </p>
+            <pre>
+                1 x 5 = 5
+                2 x 5 = 10
+                3 x 5 = 15
+                4 x 5 = 20
+                5 x 5 = 25
+                6 x 5 = 30
+                7 x 5 = 35
+                8 x 5 = 40
+                9 x 5 = 45
+               10 x 5 = 50
+            </pre>
+
+            <a class="estilolinks" href="https://github.com/PocoyoLGt/Taller_3/blob/main/Taller_3/src/Cuarto/Punto_4.java" >Repositorio</a>
+
+            <h2 class="subtalljava"> Punto 5</h2>
+            <p class="estiloparrafos"> Utilizando el ciclo que usted desee, crear un menú de ejecución infinita hasta que el usuario desee terminar dicho ciclo. </p>
+            <a class="estilolinks" href="https://github.com/PocoyoLGt/Taller_3/blob/main/Taller_3/src/Quinto/Punto_5.java" >Repositorio</a>
+
+            <h2 class="subtalljava"> Punto 6</h2>
+            <p class="estiloparrafos"> Se está creando una aplicación que va a estar conectada con un prototipo que permita almacenar contactos telefónicos en el dispositivo. Para ello cada contacto debe contener nombre completo, teléfono y organización. Se requiere que la aplicación permita añadir 3 contactos verificando que el número no esté almacenado, buscar contactos almacenados y eliminar contactos si el usuario lo requiere. Recuerde que el sistema debe terminar cuando el usuario así lo indique. </p>
+            <a class="estilolinks" href="https://github.com/PocoyoLGt/Taller_3/blob/main/Taller_3/src/Sexto/Punto_6.java" >Repositorio</a>
+
+            <h2 class="subtalljava"> Punto 7</h2>
+            <p class="estiloparrafos"> El parqueadero "El guardián" presta sus servicios de parqueadero nocturno para los usuarios del barrio y requiere una aplicación que permita registrar los vehículos que se cuidan en estas instalaciones. Se sugiere que el parqueadero tenga los atributos del vehículo como son, placa y marca, y los datos del cliente como son nombre completo y número de teléfono. Para cada vehículo se debe permitir la opción de ingresar al parqueadero, retirar del parqueadero y consultar si un vehículo se encuentra en el parqueadero. Recuerde que el sistema debe terminar cuando el usuario así lo indique. Tenga en presente que el parqueadero solo puede almacenar máximo 5 vehículos. </p>
+            <a class="estilolinks" href="https://github.com/PocoyoLGt/Taller_3/blob/main/Taller_3/src/Septimo/Punto_7.java" >Repositorio</a>
+
+            <h2 class="subtalljava"> Punto 8</h2>
+            <p class="estiloparrafos"> La escuela automovilística "El Maestro" requiere una aplicación que permita registrar a sus clientes en los cursos de enseñanza automovilística y establecer quienes lo han aprobado para continuar con el trámite de adquirir la licencia de conducción. Para cada usuario se debe permitir registrar su ingreso al curso, consultar usuarios que hayan presentado el curso y resultados de la prueba del curso (si fueron aprobados o no). Recuerde que el sistema debe terminar cuando el usuario así lo indique. Tenga presente que la escuela tiene capacidad máxima de gestionar 8 usuarios en su totalidad.  </p>
+            <a class="estilolinks" href="https://github.com/PocoyoLGt/Taller_3/blob/main/Taller_3/src/Octavo/Punto_8.java" >Repositorio</a>
+
+        </article>
+
+    </section>
+    <div id="volver2">
+        <a href="./index.html" > <img id="volvermenu" src="pictures/VOLVERMENU.png" alt="Volver Menu Principal" > </a>
+        <a href="./tallerjava.html"> <img id="volverjava" src="pictures/VOLVERMENUPSEINT (1).png" alt="Volver Menu JAVA" ></a>
+        
+    
+    </div>
+    
+</body>
+</html>
